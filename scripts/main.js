@@ -52,8 +52,10 @@ function determine_prime() {
     } else if (is_prime(number)) {
         myHeading.textContent = number + ' is a prime number.';
     } else {
-        myHeading.textContent = number + ' is not a prime number. '
-        + number + ' = ' + factorization(number);
+        myHeading.textContent = number + ' is not a prime number.';
+        if (number > 1) {
+            myHeading.textContent += ' ' + number + ' = ' + factorization(number);
+        }
     }
 }
 
