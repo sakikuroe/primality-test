@@ -21,9 +21,9 @@ function determine_prime() {
     if (isNaN(number)) {
         myHeading.textContent = 'Please input an integer value.';
     } else if (is_prime(number)) {
-        myHeading.textContent = number + ' is prime number.';
+        myHeading.textContent = number + ' is a prime number.';
     } else {
-        myHeading.textContent = number + ' is not prime number.';
+        myHeading.textContent = number + ' is not a prime number.';
     }
 }
 
